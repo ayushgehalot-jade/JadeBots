@@ -60,43 +60,18 @@ JadeBots/
 ## Installation & Setup
 
 ### Prerequisites
-- Python 3.8+
 - Node.js 16+
 - OpenAI API key
 
 ### Backend Setup
 
-1. **Navigate to backend directory**:
-   ```bash
-   cd backend
-   ```
+cd backend-nodejs
 
-2. **Create virtual environment**:
+```bash
+   npm install
+   ```
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Set up environment variables**:
-   ```bash
-   cp env_example.txt .env
-   ```
-   
-   Edit `.env` file with your configuration:
-   ```
-   DATABASE_URL=sqlite:///./jade_ai.db
-   SECRET_KEY=your-secret-key-here
-   OPENAI_API_KEY=your-openai-api-key
-   ```
-
-5. **Run the backend server**:
-   ```bash
-   python main.py
+   npm start
    ```
    
    The API will be available at `http://localhost:8000`
